@@ -21,7 +21,7 @@ jobs:
 
     - name: Install build tools
       # The org's own runners (Coolify's, on the DL380) carry no C toolchain.
-      run: sudo apt-get update && sudo apt-get install -y build-essential libssl-dev
+      run: sudo apt-get update && sudo apt-get install -y build-essential libssl-dev libncurses-dev zlib1g-dev
       
     - name: Restore common utilities
       uses: actions/cache/restore@v4
