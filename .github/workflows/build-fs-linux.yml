@@ -14,7 +14,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
     - name: Install ODBC development headers
-      run: sudo apt-get update && sudo apt-get install -y build-essential unixodbc-dev
+      run: sudo apt-get update && sudo apt-get install -y build-essential libssl-dev unixodbc-dev
       
     - name: Cache build dependencies
       uses: actions/cache@v4
